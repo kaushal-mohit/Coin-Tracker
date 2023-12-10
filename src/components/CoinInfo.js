@@ -87,13 +87,26 @@ const CoinInfo = ({ coin }) => {
                   },
                 ],
               }}
-              options={{
+
+              options={
+                {
+                  //horizontal scaling implemented
+                  scales:{
+                    x:{
+                      ticks:{
+                        maxTicksLimit:30
+                      }
+                    }
+                },
+                
                 elements: {
                   point: {
                     radius: 1,
                   },
                 },
-              }}
+
+              }
+              }
             />
             <div
               style={{
